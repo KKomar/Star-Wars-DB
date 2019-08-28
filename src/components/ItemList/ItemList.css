@@ -1,0 +1,16 @@
+.item-list {
+    margin-top: 1rem;
+}
+
+.item-list .list-group-item {
+    cursor: pointer;
+}
+
+.item-list .list-group-item:hover {
+    background-color: #444;
+}
+
+.info {
+    color: darkgray;
+    margin-left: 5px;
+}

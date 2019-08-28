@@ -1,0 +1,20 @@
+.error {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.error-icon {
+    width: 10rem;
+    height: 10rem;
+    margin: -2rem;
+}
+
+.boom {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.error span {
+    display: block;
+    color: darkorange;
+}
