@@ -1,9 +1,8 @@
 import React from 'react';
 
 import ItemDetails, { Record } from '../ItemDetails/ItemDetails';
-import { itemData } from '../hoc';
+import { withItem, withSwapi } from '../hoc';
 import SwapiService from '../../services/swapi-service';
-import { SwapiConsumer } from "../SwapiServiceContext";
 
 const swapi = new SwapiService();
 
@@ -20,10 +19,10 @@ const { getPerson, getPlanet, getStarship, getSpecies,
 //     };
 // };
 
-const Person = itemData(ItemDetails, getPerson, getPersonImage);
-const Planet = itemData(ItemDetails, getPlanet, getPlanetImage);
-const Starship = itemData(ItemDetails, getStarship, getStarshipImage);
-const Species = itemData(ItemDetails, getSpecies, getSpeciesImage);
+const Person = withItem(ItemDetails, getPerson, getPersonImage);
+const Planet = withItem(ItemDetails, getPlanet, getPlanetImage);
+const Starship = withItem(ItemDetails, getStarship, getStarshipImage);
+const Species = withItem(ItemDetails, getSpecies, getSpeciesImage);
 
 const PersonDetails = ({ id }) => {
     return (

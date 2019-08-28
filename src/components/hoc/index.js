@@ -1,4 +1,5 @@
 import withData from './withData';
-import itemData from './itemData';
+import withItem from './withItem';
+import withSwapi from './withSwapi';
 
-export { withData, itemData };
+export { withData, withItem, withSwapi };

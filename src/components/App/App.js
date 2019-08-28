@@ -30,9 +30,9 @@ export default class App extends Component {
                         {/*<StarshipList/>*/}
                         {/*<SpeciesList/>*/}
                         <PersonDetails id={13} />
-                        <SpeciesDetails id={5} />
-                        <PlanetDetails id={9}/>
-                        <StarshipDetails id={9}/>
+                        {/*<SpeciesDetails id={5} />*/}
+                        {/*<PlanetDetails id={9}/>*/}
+                        {/*<StarshipDetails id={9}/>*/}
                         {/*<Row left={personDetails} right={starshipDetails}/>*/}
                     </div>
                 </SwapiProvider>

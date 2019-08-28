@@ -5,12 +5,10 @@ import {
     SpeciesList
 } from './ItemLists';
 
-import {
-    PersonDetails,
-    PlanetDetails,
-    StarshipDetails,
-    SpeciesDetails
-} from './Details';
+import PersonDetails from './PersonDetails';
+import PlanetDetails from './PlanetDetails';
+import StarshipDetails from './StarshipDetails';
+import SpeciesDetails from './SpeciesDetails';
 
 export {
     PersonList, PlanetList, StarshipList, SpeciesList,

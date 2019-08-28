@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Spinner from "../Spinner/Spinner";
 import Error from '../Error/Error';
 
-const itemData = (View, getData, getImageUrl) => {
+const withItem = (View) => {
     return class extends Component {
         state = {
             item: null,
@@ -31,7 +31,7 @@ const itemData = (View, getData, getImageUrl) => {
         };
 
         updateItem = () => {
-            const { id } = this.props;
+            const { id, getData, getImageUrl } = this.props;
 
             if (id) {
                 getData(id)
@@ -79,4 +79,4 @@ const itemData = (View, getData, getImageUrl) => {
     }
 };
 
-export default itemData;
+export default withItem;
