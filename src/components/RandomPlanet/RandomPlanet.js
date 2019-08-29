@@ -9,17 +9,21 @@ import Error from '../Error';
 import './RandomPlanet.css';
 
 export default class RandomPlanet extends Component {
+    static defaultProps = {
+        updateSpeed: 10000
+    };
+
     swapi = new SwapiService();
 
     state = {
-        planet: {},
+        planet: null,
         loading: true,
         error: false
     };
 
     componentDidMount() {
         this.updatePlanet();
-        this.interval = setInterval(this.updatePlanet, 3000);
+        this.interval = setInterval(this.updatePlanet, this.props.updateSpeed);
     }
 
     componentWillUnmount() {
