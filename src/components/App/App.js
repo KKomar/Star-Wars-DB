@@ -8,6 +8,7 @@ import { PersonList, SpeciesList, StarshipList, PlanetList,
 import ErrorButton from "../ErrorButton/ErrorButton";
 import ErrorBoundary from "../ErrorBoundary/ErrorBoundary";
 
+import DummySwapiService from '../../services/dummy-swapi-service';
 import SwapiService from '../../services/swapi-service';
 import { SwapiProvider } from '../SwapiServiceContext';
 
@@ -15,24 +16,36 @@ import './App.css';
 import Row from "../Row/Row";
 
 export default class App extends Component {
-    swapi = new SwapiService();
+    state = {
+        swapi: new DummySwapiService()
+    };
+
+    onServiceChange = () => {
+        this.setState(({ swapi }) => {
+            const Service = swapi instanceof SwapiService ? DummySwapiService : SwapiService;
+
+            return {
+                swapi: new Service()
+            };
+        });
+    };
 
     render() {
         return (
             <ErrorBoundary>
-                <SwapiProvider value={ this.swapi } >
+                <SwapiProvider value={ this.state.swapi } >
                     <div className='app'>
-                        <Header />
+                        <Header onServiceChange={this.onServiceChange} />
                         <RandomPlanet />
                         <ErrorButton />
                         <PersonList />
-                        {/*<PlanetList />*/}
-                        {/*<StarshipList/>*/}
-                        {/*<SpeciesList/>*/}
+                        <PlanetList />
+                        <StarshipList/>
+                        <SpeciesList/>
                         <PersonDetails id={13} />
-                        {/*<SpeciesDetails id={5} />*/}
-                        {/*<PlanetDetails id={9}/>*/}
-                        {/*<StarshipDetails id={9}/>*/}
+                        <SpeciesDetails id={5} />
+                        <PlanetDetails id={9}/>
+                        <StarshipDetails id={9}/>
                         {/*<Row left={personDetails} right={starshipDetails}/>*/}
                     </div>
                 </SwapiProvider>

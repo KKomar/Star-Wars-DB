@@ -17,7 +17,7 @@ const withItem = (View) => {
         }
 
         componentDidUpdate(prevProps) {
-            if (prevProps.id !== this.props.id) {
+            if (prevProps.id !== this.props.id || prevProps.getData !== this.props.getData) {
                 this.setState({ loading: true, error: false });
                 this.updateItem();
             }
