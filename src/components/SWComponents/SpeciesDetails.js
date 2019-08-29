@@ -1,7 +1,7 @@
 import React from 'react';
 
 import ItemDetails, { Record } from '../ItemDetails/ItemDetails';
-import { withItem, withSwapi } from '../hoc';
+import { withItem, withSwapi, compose } from '../hoc';
 
 const mapMethodsToProps = swapi => {
     return {
@@ -10,7 +10,10 @@ const mapMethodsToProps = swapi => {
     }
 };
 
-const Species = withSwapi(mapMethodsToProps)(withItem(ItemDetails));
+const Species = compose(
+                    withSwapi(mapMethodsToProps),
+                    withItem
+                )(ItemDetails);
 
 const SpeciesDetails = ({ id }) => {
     return (

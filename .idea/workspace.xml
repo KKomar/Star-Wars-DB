@@ -4,11 +4,7 @@
     <list default="true" id="8dde81f6-2573-420e-8f69-7d0820e7ab22" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/components/SWComponents/ItemLists.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SWComponents/ItemLists.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SWComponents/PersonDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SWComponents/PersonDetails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SWComponents/PlanetDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SWComponents/PlanetDetails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SWComponents/SpeciesDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SWComponents/SpeciesDetails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SWComponents/StarshipDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SWComponents/StarshipDetails.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/hoc/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hoc/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/hoc/withSwapi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hoc/withSwapi.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,11 +17,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/hoc/compose.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/SWComponents/ItemLists.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="62" column="32" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
+            <state relative-caret-position="243">
+              <caret line="52" column="28" lean-forward="true" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -33,44 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/hoc/withData.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/hoc/withSwapi.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/SWComponents/PersonDetails.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="67" lean-forward="true" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/SWComponents/StarshipDetails.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+            <state relative-caret-position="144">
+              <caret line="8" column="41" lean-forward="true" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -86,7 +58,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/PersonDetails/PersonDetails.css" />
         <option value="$PROJECT_DIR$/src/components/PersonDetails/Person.js" />
         <option value="$PROJECT_DIR$/src/components/ErrorButton/ErrorButton.js" />
         <option value="$PROJECT_DIR$/src/components/PersonDetails/PersonDetails.js" />
@@ -103,7 +74,6 @@
         <option value="$PROJECT_DIR$/src/components/hoc/itemData.js" />
         <option value="$PROJECT_DIR$/src/components/SWComponents/Details.js" />
         <option value="$PROJECT_DIR$/src/components/SWComponents/index.js" />
-        <option value="$PROJECT_DIR$/src/services/dummy-swapi-service.js" />
         <option value="$PROJECT_DIR$/src/components/Header/Header.css" />
         <option value="$PROJECT_DIR$/src/components/Pages/index.js" />
         <option value="$PROJECT_DIR$/src/components/App/index.js" />
@@ -130,13 +100,15 @@
         <option value="$PROJECT_DIR$/src/components/RandomPlanet/RandomPlanet.js" />
         <option value="$PROJECT_DIR$/src/components/RandomPlanet/Planet.js" />
         <option value="$PROJECT_DIR$/src/components/hoc/withSwapi.js" />
-        <option value="$PROJECT_DIR$/src/components/SWComponents/PersonDetails.js" />
         <option value="$PROJECT_DIR$/src/components/SWComponents/PlanetDetails.js" />
         <option value="$PROJECT_DIR$/src/components/SWComponents/SpeciesDetails.js" />
         <option value="$PROJECT_DIR$/src/components/SWComponents/StarshipDetails.js" />
-        <option value="$PROJECT_DIR$/src/components/hoc/index.js" />
         <option value="$PROJECT_DIR$/src/components/hoc/withChild.js" />
+        <option value="$PROJECT_DIR$/src/services/dummy-swapi-service.js" />
+        <option value="$PROJECT_DIR$/src/components/hoc/index.js" />
+        <option value="$PROJECT_DIR$/src/components/hoc/compose.js" />
         <option value="$PROJECT_DIR$/src/components/SWComponents/ItemLists.js" />
+        <option value="$PROJECT_DIR$/src/components/SWComponents/PersonDetails.js" />
       </list>
     </option>
   </component>
@@ -263,12 +235,12 @@
       <workItem from="1566850964766" duration="7173000" />
       <workItem from="1566897035374" duration="16772000" />
       <workItem from="1567018849498" duration="12294000" />
-      <workItem from="1567075021826" duration="8459000" />
+      <workItem from="1567075021826" duration="10169000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122944000" />
+    <option name="totallyTimeSpent" value="124654000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -367,13 +339,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/ItemList/ItemList.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ItemDetails/ItemDetails.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -387,13 +352,6 @@
     <entry file="file://$PROJECT_DIR$/src/components/SWComponents/StarshipList.js" />
     <entry file="file://$PROJECT_DIR$/src/components/SWComponents/PlanetList.js" />
     <entry file="file://$PROJECT_DIR$/src/components/SWComponents/SpeciesList.js" />
-    <entry file="file://$PROJECT_DIR$/src/services/dummy-swapi-service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="959">
-          <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Header/Header.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
@@ -617,13 +575,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/swapi-service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-612">
-          <caret line="2" column="63" selection-start-line="2" selection-start-column="63" selection-end-line="2" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/RandomPlanet/Planet.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -681,30 +632,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/hoc/index.js">
+    <entry file="file://$PROJECT_DIR$/src/components/hoc/withData.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
-          <caret line="3" column="36" lean-forward="true" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/hoc/withItem.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/SWComponents/PersonDetails.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="67" lean-forward="true" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -718,17 +649,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/hoc/withData.js">
+    <entry file="file://$PROJECT_DIR$/src/components/hoc/withItem.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+        <state relative-caret-position="-360">
+          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/swapi-service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1116">
+          <caret line="2" column="63" selection-start-line="2" selection-start-column="63" selection-end-line="2" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/dummy-swapi-service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1764">
+          <caret line="98" column="51" selection-start-line="98" selection-start-column="51" selection-end-line="98" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/hoc/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="36" lean-forward="true" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/hoc/compose.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/SWComponents/ItemLists.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="62" column="32" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
+        <state relative-caret-position="243">
+          <caret line="52" column="28" lean-forward="true" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/SWComponents/PersonDetails.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="41" lean-forward="true" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
