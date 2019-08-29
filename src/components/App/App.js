@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+
 import Header from '../Header';
 import RandomPlanet from '../RandomPlanet';
 import ErrorBoundary from '../ErrorBoundary';
@@ -30,15 +32,18 @@ export default class App extends Component {
         return (
             <ErrorBoundary>
                 <SwapiProvider value={ this.state.swapi } >
-                    <div className='app'>
-                        <Header onServiceChange={this.onServiceChange} />
-                        <RandomPlanet />
+                    <Router>
+                        <div className='app'>
+                            <Header onServiceChange={this.onServiceChange} />
+                            <RandomPlanet />
 
-                        <PeoplePage />
-                        <PlanetsPage />
-                        <StarshipsPage />
-                        <SpeciesPage />
-                    </div>
+                            <Route exact path='/' render={() => <h2>Welcome to Star Wars DB!</h2>} />
+                            <Route path='/people' component={ PeoplePage } />
+                            <Route path='/planets' component={ PlanetsPage } />
+                            <Route path='/starships' component={ StarshipsPage } />
+                            <Route path='/species' component={ SpeciesPage } />
+                        </div>
+                    </Router>
                 </SwapiProvider>
             </ErrorBoundary>
         )
