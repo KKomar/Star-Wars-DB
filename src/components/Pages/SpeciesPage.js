@@ -1,27 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { withRouter } from 'react-router-dom';
 
-import { SpeciesList, SpeciesDetails } from '../SWComponents';
-import Row from '../Row';
+import { SpeciesList } from '../SWComponents';
 
-export default class SpeciesPage extends Component {
-    state = {
-        selectedItem: null
-    };
+const SpeciesPage = ({ history }) => {
+    return (
+        <SpeciesList onItemSelected={ (id) => history.push(`/species/${id}`) } />
+    )
+};
 
-    onItemSelected = (id) => {
-        this.setState({
-            selectedItem: id
-        });
-    };
-
-    render() {
-        const { selectedItem } = this.state;
-
-        return (
-            <Row
-                left={ <SpeciesList onItemSelected={ this.onItemSelected } /> }
-                right={ <SpeciesDetails id={ selectedItem } /> }
-            />
-        )
-    }
-}
+export default withRouter(SpeciesPage);
