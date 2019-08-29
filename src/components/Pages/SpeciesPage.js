@@ -5,7 +5,7 @@ import { SpeciesList } from '../SWComponents';
 
 const SpeciesPage = ({ history }) => {
     return (
-        <SpeciesList onItemSelected={ (id) => history.push(`/species/${id}`) } />
+        <SpeciesList onItemSelected={ (id) => history.push(id) } />
     )
 };
 

@@ -5,7 +5,7 @@ import { PersonList } from '../SWComponents';
 
 const PeoplePage = ({ history }) => {
     return (
-        <PersonList onItemSelected={ (id) => history.push(`/people/${id}`) } />
+        <PersonList onItemSelected={ (id) => history.push(id) } />
     )
 };
 

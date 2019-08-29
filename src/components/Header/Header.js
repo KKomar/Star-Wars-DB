@@ -12,10 +12,10 @@ const Header = ({ onServiceChange }) => {
                 <Link to='/'>Star Wars DB</Link>
             </h3>
             <ul className='d-flex'>
-                <Link to='/people'><li>People</li></Link>
-                <Link to='/planets'><li>Planets</li></Link>
-                <Link to='starships'><li>Starships</li></Link>
-                <Link to='/species'><li>Species</li></Link>
+                <Link to='/people/'><li>People</li></Link>
+                <Link to='/planets/'><li>Planets</li></Link>
+                <Link to='/starships/'><li>Starships</li></Link>
+                <Link to='/species/'><li>Species</li></Link>
             </ul>
             <button type='button'
                     className='btn btn-secondary'
