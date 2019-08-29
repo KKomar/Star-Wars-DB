@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 
-import Spinner from "../Spinner/Spinner";
-import Error from '../Error/Error';
+import Spinner from '../Spinner';
+import Error from '../Error';
+import ErrorBoundary from '../ErrorBoundary';
 
 const withItem = (View) => {
     return class extends Component {
@@ -73,7 +74,9 @@ const withItem = (View) => {
             }
 
             return (
-                <View {...this.props} item={ item } image={ image } />
+                <ErrorBoundary>
+                    <View {...this.props} item={ item } image={ image } />
+                </ErrorBoundary>
             );
         }
     }

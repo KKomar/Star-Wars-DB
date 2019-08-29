@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 
 import SwapiService from '../../services/swapi-service';
 
-import Spinner from "../Spinner/Spinner";
+import Spinner from '../Spinner';
 import Planet from './Planet';
-import Error from '../Error/Error';
+import Error from '../Error';
 
 import './RandomPlanet.css';
 
@@ -35,7 +35,7 @@ export default class RandomPlanet extends Component {
 
     updatePlanet = () => {
         const id = Math.floor(Math.random()*25) + 1;
-        // const id = 12;
+
         this.swapi.getPlanet(id).then(planet => this.setState({
             planet,
             loading: false,

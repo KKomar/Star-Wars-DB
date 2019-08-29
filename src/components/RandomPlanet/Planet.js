@@ -5,6 +5,7 @@ import './Planet.css';
 export default class Planet extends Component {
     render() {
         const {id, name, population, rotationPeriod, diameter, gravity} = this.props.planet;
+        console.log();
 
         return (
             <React.Fragment>

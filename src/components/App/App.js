@@ -1,23 +1,19 @@
 import React, { Component } from 'react';
 
-import Header from '../Header/Header';
-import RandomPlanet from '../RandomPlanet/RandomPlanet';
-import { PersonList, SpeciesList, StarshipList, PlanetList,
-         PersonDetails, SpeciesDetails, PlanetDetails, StarshipDetails
-} from '../SWComponents';
-import ErrorButton from "../ErrorButton/ErrorButton";
-import ErrorBoundary from "../ErrorBoundary/ErrorBoundary";
+import Header from '../Header';
+import RandomPlanet from '../RandomPlanet';
+import ErrorBoundary from '../ErrorBoundary';
+import { PeoplePage, PlanetsPage, StarshipsPage, SpeciesPage } from '../Pages';
 
 import DummySwapiService from '../../services/dummy-swapi-service';
 import SwapiService from '../../services/swapi-service';
 import { SwapiProvider } from '../SwapiServiceContext';
 
 import './App.css';
-import Row from "../Row/Row";
 
 export default class App extends Component {
     state = {
-        swapi: new DummySwapiService()
+        swapi: new SwapiService()
     };
 
     onServiceChange = () => {
@@ -37,16 +33,11 @@ export default class App extends Component {
                     <div className='app'>
                         <Header onServiceChange={this.onServiceChange} />
                         <RandomPlanet />
-                        <ErrorButton />
-                        <PersonList />
-                        <PlanetList />
-                        <StarshipList/>
-                        <SpeciesList/>
-                        <PersonDetails id={13} />
-                        <SpeciesDetails id={5} />
-                        <PlanetDetails id={9}/>
-                        <StarshipDetails id={9}/>
-                        {/*<Row left={personDetails} right={starshipDetails}/>*/}
+
+                        <PeoplePage />
+                        <PlanetsPage />
+                        <StarshipsPage />
+                        <SpeciesPage />
                     </div>
                 </SwapiProvider>
             </ErrorBoundary>
