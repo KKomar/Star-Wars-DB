@@ -10,7 +10,7 @@ const mapMethodsToProps = swapi => {
     }
 };
 
-const Person = withSwapi(withItem(ItemDetails), mapMethodsToProps);
+const Person = withSwapi(mapMethodsToProps)(withItem(ItemDetails));
 
 const PersonDetails = ({ id }) => {
     return (

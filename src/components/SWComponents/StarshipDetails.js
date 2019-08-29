@@ -10,7 +10,7 @@ const mapMethodsToProps = swapi => {
     }
 };
 
-const Starship = withSwapi(withItem(ItemDetails), mapMethodsToProps);
+const Starship = withSwapi(mapMethodsToProps)(withItem(ItemDetails));
 
 const StarshipDetails = ({ id }) => {
     return (

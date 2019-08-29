@@ -10,7 +10,7 @@ const mapMethodsToProps = swapi => {
     }
 };
 
-const Species = withSwapi(withItem(ItemDetails), mapMethodsToProps);
+const Species = withSwapi(mapMethodsToProps)(withItem(ItemDetails));
 
 const SpeciesDetails = ({ id }) => {
     return (

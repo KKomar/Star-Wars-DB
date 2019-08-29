@@ -1,17 +1,7 @@
 import React from 'react';
 
 import ItemList from '../ItemList/ItemList';
-import { withData, withSwapi } from '../hoc';
-
-const withChildFunction = (Wrapped, fn) => {
-    return (props) => {
-        return (
-            <Wrapped {...props} >
-                { fn }
-            </Wrapped>
-        );
-    };
-};
+import { withData, withSwapi, withChild } from '../hoc';
 
 const mapPersonMethodsToProps = swapi => {
     return {
@@ -42,33 +32,25 @@ const renderNameAndTerrain = item => <span>{ item.name }<span className="info">(
 const renderNameAndModel = item => <span>{ item.name }<span className="info">({ item.model })</span></span>;
 const renderNameAndLanguage = item => <span>{ item.name }<span className="info">({ item.language })</span></span>;
 
-const PersonList = withSwapi(
+const PersonList = withSwapi(mapPersonMethodsToProps)(
                         withData(
-                            withChildFunction(ItemList, renderNameAndBirth)
-                        ),
-                        mapPersonMethodsToProps
-                   );
+                            withChild(renderNameAndBirth)(
+                                ItemList)));
 
-const PlanetList = withSwapi(
+const PlanetList = withSwapi(mapPlanetMethodsToProps)(
                         withData(
-                            withChildFunction(ItemList, renderNameAndTerrain)
-                        ),
-                        mapPlanetMethodsToProps
-                   );
+                            withChild(renderNameAndTerrain)(
+                                ItemList)));
 
-const StarshipList = withSwapi(
+const StarshipList = withSwapi(mapStarshipMethodsToProps)(
                         withData(
-                            withChildFunction(ItemList, renderNameAndModel)
-                        ),
-                        mapStarshipMethodsToProps
-                     );
+                            withChild(renderNameAndModel)(
+                                ItemList)));
 
-const SpeciesList = withSwapi(
+const SpeciesList = withSwapi(mapSpeciesMethodsToProps)(
                         withData(
-                            withChildFunction(ItemList, renderNameAndLanguage)
-                        ),
-                        mapSpeciesMethodsToProps
-                    );
+                            withChild(renderNameAndLanguage)(
+                                ItemList)));
 
 export {
     PersonList,
