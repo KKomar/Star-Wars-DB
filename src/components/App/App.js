@@ -40,29 +40,10 @@ export default class App extends Component {
 
                             <Route exact path='/' render={() => <h2>Welcome to Star Wars DB!</h2>} />
 
-                            <Route exact path='/people' component={ PeoplePage } />
-                            <Route path='/people/:id' render={({ match }) => {
-                                const { id } = match.params;
-                                return <PersonDetails id={id} />
-                            }} />
-
-                            <Route exact path='/planets' component={ PlanetsPage } />
-                            <Route path='/planets/:id' render={({ match }) => {
-                                const { id } = match.params;
-                                return <PlanetDetails id={id} />
-                            }} />
-
-                            <Route exact path='/starships' component={ StarshipsPage } />
-                            <Route path='/starships/:id' render={({ match }) => {
-                                const { id } = match.params;
-                                return <StarshipDetails id={id} />
-                            }} />
-
-                            <Route exact path='/species' component={ SpeciesPage } />
-                            <Route path='/species/:id' render={({ match }) => {
-                                const { id } = match.params;
-                                return <SpeciesDetails id={id} />
-                            }} />
+                            <Route path='/people/:id?' component={ PeoplePage } />
+                            <Route exact path='/planets/:id?' component={ PlanetsPage } />
+                            <Route exact path='/starships/:id?' component={ StarshipsPage } />
+                            <Route exact path='/species/:id?' component={ SpeciesPage } />
                         </div>
                     </Router>
                 </SwapiProvider>

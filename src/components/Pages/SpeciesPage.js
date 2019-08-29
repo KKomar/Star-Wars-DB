@@ -1,11 +1,17 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 
-import { SpeciesList } from '../SWComponents';
+import { SpeciesList, SpeciesDetails } from '../SWComponents';
+import Row from '../Row';
 
-const SpeciesPage = ({ history }) => {
+const SpeciesPage = ({ history, match }) => {
+    const { id } = match.params;
+
     return (
-        <SpeciesList onItemSelected={ (id) => history.push(id) } />
+        <Row
+            left={ <SpeciesList onItemSelected={ (id) => history.push(id) } /> }
+            right={ <SpeciesDetails id={ id } /> }
+        />
     )
 };
 

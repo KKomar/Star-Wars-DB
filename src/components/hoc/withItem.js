@@ -49,10 +49,18 @@ const withItem = (View) => {
         render() {
             const { item, loading, error, image } = this.state;
 
-            if (loading || !item) {
+            if (loading) {
                 return (
                     <div className='item-details card'>
                         <Spinner />
+                    </div>
+                )
+            }
+
+            if (!item && !error) {
+                return (
+                    <div className='item-details card'>
+                        <span>Select item from the list</span>
                     </div>
                 )
             }
