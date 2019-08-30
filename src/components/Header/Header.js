@@ -16,6 +16,8 @@ const Header = () => {
                 <Link to='/planets/'><li>Planets</li></Link>
                 <Link to='/starships/'><li>Starships</li></Link>
                 <Link to='/species/'><li>Species</li></Link>
+                <Link to='/secret'><li>Secret</li></Link>
+                <Link to='/login'><li>Login</li></Link>
             </ul>
         </div>
     )
